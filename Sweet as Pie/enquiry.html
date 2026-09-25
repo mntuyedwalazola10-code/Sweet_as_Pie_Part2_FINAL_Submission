@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sweet as Pie | Enquiry</title>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img alt="Sweet as Pie logo" src="images/sweet-as-pie-banner.jpg" width="150"/>
+</a>
+<!-- Main navigation -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a aria-current="page" href="enquiry.html">Enquiry</a>
+    <a href="contact.html">Contact</a>
+    <a href="checkout.html">Checkout</a>
+</nav>
+</header>
+<main>
+<section>
+<h1>Product Enquiry</h1>
+<p>
+                Have a question about our products, catering,
+                large orders or special occasions? Complete the
+                form below.
+            </p>
+<!-- Customer enquiry form -->
+<form data-demo-form="true" data-success="Thank you. Your enquiry has been captured successfully for this prototype.">
+<p>
+<label for="name">Full Name:</label><br/>
+<input id="name" name="name" required="" type="text"/>
+</p>
+<p>
+<label for="email">Email Address:</label><br/>
+<input id="email" name="email" required="" type="email"/>
+</p>
+<p>
+<label for="phone">Phone Number:</label><br/>
+<input id="phone" name="phone" type="tel"/>
+</p>
+<p>
+<label for="enquiryType">
+                        Type of Enquiry:
+                    </label><br/>
+<select id="enquiryType" name="enquiryType">
+<option value="">Select an option</option>
+<option value="product">
+                            Product Enquiry
+                        </option>
+<option value="catering">
+                            Catering
+                        </option>
+<option value="large-order">
+                            Large Order
+                        </option>
+<option value="event">
+                            Event
+                        </option>
+<option value="other">
+                            Other
+                        </option>
+</select>
+</p>
+<p>
+<label for="message">Message:</label><br/>
+<textarea cols="40" id="message" name="message" required="" rows="6"></textarea>
+</p>
+<button type="submit">
+                    Submit Enquiry
+                </button>
+<p aria-live="polite" class="form-status"></p></form>
+</section>
+</main>
+<footer>
+<p>© 2026 Sweet as Pie. All rights reserved.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

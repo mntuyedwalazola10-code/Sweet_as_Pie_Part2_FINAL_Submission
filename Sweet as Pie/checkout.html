@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sweet as Pie | Checkout</title>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img alt="Sweet as Pie logo" src="images/sweet-as-pie-banner.jpg" width="150"/>
+</a>
+<!-- Main navigation -->
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="products.html">Products</a>
+<a href="enquiry.html">Enquiry</a>
+<a href="contact.html">Contact</a>
+<a aria-current="page" href="checkout.html">Checkout</a>
+</nav>
+</header>
+<main><h1>Checkout</h1><div class="checkout-grid"><section class="order-summary"><h2>Order Summary</h2><div id="cartItems"></div><p class="summary-total"><strong>Subtotal:</strong> <span id="subtotal">R0.00</span></p><p class="summary-total"><strong>Total:</strong> <span id="total">R0.00</span></p></section><section><h2>Customer Details</h2><form id="checkoutForm">
+<p><label for="checkoutName">Full Name:</label><input autocomplete="name" id="checkoutName" name="checkoutName" required="" type="text"/></p>
+<p><label for="checkoutEmail">Email Address:</label><input autocomplete="email" id="checkoutEmail" name="checkoutEmail" required="" type="email"/></p>
+<p><label for="checkoutPhone">Phone Number:</label><input autocomplete="tel" id="checkoutPhone" name="checkoutPhone" required="" type="tel"/></p>
+<fieldset><legend>Order Method</legend><input id="collection" name="orderMethod" required="" type="radio" value="collection"/><label for="collection">Collection</label><br/><input id="delivery" name="orderMethod" type="radio" value="delivery"/><label for="delivery">Delivery</label></fieldset>
+<p><label for="address">Delivery Address:</label><textarea id="address" name="address" rows="4"></textarea></p>
+<p><label for="orderDate">Preferred Date:</label><input id="orderDate" name="orderDate" required="" type="date"/></p>
+<button type="submit">Place Order</button><p aria-live="polite" class="form-status" id="checkoutStatus"></p>
+</form></section></div></main>
+<footer>
+<p>© 2026 Sweet as Pie. All rights reserved.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
